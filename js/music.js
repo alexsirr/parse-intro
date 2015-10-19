@@ -32,6 +32,7 @@ $('form').submit(function() {
 	$("input").each(function(){
 		var thisInput = $(this);
 		musicItem.set(thisInput.attr('id'), thisInput.val());
+		thisInput.val("");
 	})
 
 
